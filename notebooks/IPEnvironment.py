@@ -65,6 +65,14 @@ class CollisionChecker(object):
 #        return False
 
     def drawObstacles(self, ax):
+        # CHANGELOG
+        """
+        REMOVED paramter "ax": was not used in function
+        ADDED "plt.show()": display the plot
+        """
         for key, value in self.scene.items():
             plotting.plot_polygon(value, add_points=False, color='red')
+        #plt.show()
+
+
             
